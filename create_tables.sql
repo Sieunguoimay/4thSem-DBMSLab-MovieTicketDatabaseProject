@@ -61,7 +61,6 @@ CREATE TABLE Tickets
   ticket_no INT NOT NULL,
   tid INT NOT NULL,
   price INT NOT NULL,
-  seat_no CHAR(10) NOT NULL,
   show_date DATE NOT NULL,
   booking_date DATE NOT NULL,
   show_id INT NOT NULL,
