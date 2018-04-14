@@ -1,0 +1,5 @@
+1.Retrieve the name of movie directed by "director name" having discount "rupees";
+2.Retrieve the starting and ending time of movie "movie name"
+3.List all the movies having ticket price less than 300 .
+4.Show the details of customer who has booking the ticket for movie "movie name";
+5.Find the number of seats in a theatre which is controlled by admin having id "admin_id";
