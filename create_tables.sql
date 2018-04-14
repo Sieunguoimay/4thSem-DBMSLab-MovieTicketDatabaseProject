@@ -28,7 +28,7 @@ CREATE TABLE Theatre
 (
   tid INT NOT NULL,
   tname VARCHAR(20) NOT NULL,
-  location CHAR NOT NULL,
+  location CHAR(20) NOT NULL,
   admin_id INT NOT NULL,
   No_of_seats INT NOT NULL,
 
