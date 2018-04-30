@@ -1,0 +1,25 @@
+
+Queries and Outputs:
+
+1.Retrieve the name of movie directed by "director name" having discount "rupees";
+select m_name from movie where director = 'Steven S. DeKnight' and m_id in (select m_id from tickets where ticket_no in (select ticket_no from discount where price = '120'));
+
+
+2.Retrieve the starting and ending time of movie "Pacific Rim 2"
+select Show.st_time,Show. end_time from Show, Movie where Show.m_id = Movie.m_id and Movie.m_name = 'Pacific Rim 2';
+
+
+
+3.List all the movies having ticket price less than 500 .
+select * from Movie where m_id in (select m_id from Tickets where price<500);
+
+
+
+4.Show the details of customers who have booking the ticket for movie "Pacific Rim 2" and “Deadpool 2”
+select * from customer where c_id in (select c_id from booking where m_id in (select m_id from movie where m_name = 'Deadpool 2' or m_name ='Pacific Rim 2'));
+
+
+
+5.Find the number of seats in a theatre in which the show date is ‘2018/04/30’;
+select no_of_seats from theatre where tid in (select tid from tickets where to_char(show_date,'yyyy/mm/dd') = '2018/04/30');
+
