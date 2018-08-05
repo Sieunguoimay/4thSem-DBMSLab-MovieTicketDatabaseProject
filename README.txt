@@ -1,3 +1,6 @@
+
+Please refer latest updated relational model.png for the Relational Model of our project.
+
 After login with your account
 
 To run .sql file use command "source <filename>.sql" or "@<filename>.sql"
@@ -11,6 +14,3 @@ one
 Since the data is still few. You can insert new rows into the database, it's good but remember to save your queries to this README file or you can simply add to the insert_.sql files.
 
 
-13/4/2018 Problem about No_of_seats is corrected by moving this attribute from Seats to Theatre.
-	In tickets, removed the hall_no and seat_no. The database is now inserted.
-	The ppt file is corrected accordingly.
